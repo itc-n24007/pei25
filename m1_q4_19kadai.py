@@ -12,5 +12,5 @@ else:
     result = 'D'
 print(result)
 print(id(a))
-print(id(b))
+print(id_a)
 print(type(id_a))
