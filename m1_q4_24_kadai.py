@@ -1,5 +1,7 @@
 animals = ['Dog', 'Cat', 'Rabbit', 'Horse', 'Dolphin']
 total = 0
+print("totalの値は", total) 
+
 for animal in animals:
     from_D = animal.startswith('D')
     is_long = len(animal) > 5
