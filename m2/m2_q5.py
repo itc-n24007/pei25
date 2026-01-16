@@ -1,11 +1,11 @@
-names = ['鈴木太郎', '田中花子']
+names = ['鈴木太郎','田中花子']
 print(names[-2])
 
 list_a = [12, 9, 13, 3, 7, 10]
 list_b = []
 for i in list_a:
     list_b.append(int(i / 2 + 4))
-print(f'私は{list_b[4]}歳です。')
+print(f'私は{list_b[4]}歳です')
 
 month = 0
 for i in list_a[-4:-2]:
@@ -16,15 +16,13 @@ print(f'{names[1]}の誕生日:{month}月{day}日')
 list_c = []
 for i in range(0, 12, 2):
     if i % 3 == 2:
-        if list_c:
-            list_c.pop()
+        list_c.pop()
     else:
         list_c.append(i)
 print(f'{names[-1][-2:]}の誕生日:{list_c[0]}月{list_c[1]}日')
 
 names.append(names[1][0:2] + names[0][2:])
 names += ['小山田明子', '小森鈴太郎']
-
 total = 0
 for s in names:
     if s.startswith('田'):
@@ -35,7 +33,3 @@ for s in names:
         total += len(s)
 
 print(total)
-
-month2 = (list_a[0] // 2) + (list_a[5] // 2) - 1
-day2 = (list_a[1] + list_a[4]) - 3
-print(f'小山田花子の誕生日:{month2}月{day2}日')
